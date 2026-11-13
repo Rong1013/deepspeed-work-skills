@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepSpeed Unit Tests"
+  short_description: "Run DeepSpeed tests, extract and triage failures"
+  default_prompt: "Use $ds-test to run the requested DeepSpeed tests and triage failed cases."

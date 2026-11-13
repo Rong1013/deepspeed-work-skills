@@ -1,0 +1,27 @@
+# Extended regexes (awk syntax) for content that must not be published. One per line.
+# Keep patterns specific: every hit has to be reviewed by a human.
+
+# private / internal IPv4 ranges
+(^|[^0-9.])10\.[0-9]+\.[0-9]+\.[0-9]+
+(^|[^0-9.])192\.168\.[0-9]+\.[0-9]+
+(^|[^0-9.])172\.(1[6-9]|2[0-9]|3[01])\.[0-9]+\.[0-9]+
+# known internal public-facing service IPs
+42\.228\.13\.241
+# internal hosts / projects
+dcutoolkit
+devpi
+fileowner
+# internal filesystem paths
+/public/home/
+/public/Users/
+/ArchivedFile/
+# credentials
+(password|passwd|secret|token|api[_-]?key)[[:space:]]*[:=][[:space:]]*["'][^"']+["']
+-----BEGIN [A-Z ]*PRIVATE KEY-----
+AKIA[0-9A-Z]{16}
+gh[pousr]_[A-Za-z0-9]{36}
+glpat-[A-Za-z0-9_-]{20}
+https?://[^/[:space:]:@]+:[^/[:space:]@]+@
+# internal mailboxes [to confirm: add the company domain]
+@hygon\.cn
+@sugon\.com

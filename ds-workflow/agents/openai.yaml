@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepSpeed DAS Workflow"
+  short_description: "Orchestrate merge, build, test and open-source for DeepSpeed DAS"
+  default_prompt: "Use $ds-workflow to decide which DeepSpeed stages are needed and run them in order."

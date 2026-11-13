@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepSpeed Upstream Merge"
+  short_description: "Merge upstream DeepSpeed while keeping DCU/ROCm adaptations"
+  default_prompt: "Use $ds-merge to merge upstream deepspeedai/DeepSpeed into the current branch and write a checklist."

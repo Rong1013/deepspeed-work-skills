@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepSpeed Open-Source Prep"
+  short_description: "Clean and verify a DAS branch for public release"
+  default_prompt: "Use $ds-opensource to prepare a DAS branch for the public repo without pushing."

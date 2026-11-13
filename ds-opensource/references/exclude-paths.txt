@@ -1,0 +1,17 @@
+# Paths removed from the tree when preparing an open-source branch.
+# One git pathspec per line; '#' starts a comment. Directories remove everything below them.
+# Derived from origin/ds-v0.19.2-os vs ds-v0.19.2-dev and from grepping for internal addresses.
+
+# internal GitLab CI and its helper scripts (internal pip index, file server, DTK package paths)
+.gitlab-ci.yml
+.github/scripts/compile.sh
+.github/scripts/install_with_torch.sh
+.github/scripts/repair_manylinux.sh
+.github/scripts/requirements.txt
+.github/scripts/test.sh
+
+# stray build/debug artifacts that were committed by mistake
+tmp.txt
+
+# [to confirm] broken symlink committed in 8f1ac6bee; replace with docs on installing libaio
+# third_party/libaio_build/lib/libaio.so.1

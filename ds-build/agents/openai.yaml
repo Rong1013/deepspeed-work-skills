@@ -1,0 +1,4 @@
+interface:
+  display_name: "DeepSpeed DCU Build"
+  short_description: "Compile, install and verify DeepSpeed on Hygon DCU/DTK"
+  default_prompt: "Use $ds-build to compile DeepSpeed with DTK, install the wheel and verify ops."
